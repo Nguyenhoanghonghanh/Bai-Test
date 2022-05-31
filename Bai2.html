@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function duongThang(num) {
+            let stars = "";
+            for (let i = 0; i <= num; i++) {
+            stars = stars + "*"
+            }
+            return stars;
+        }   
+        function  numberOneTriangle(num) {
+            let stars = "";
+            for (let i = 0; i < num; i++) {
+            stars = stars + duongThang(i) + "\n";
+            }
+            console.log(stars)
+        }
+        numberOneTriangle(4);
+        numberOneTriangle(2);
+    </script>
+</body>
+</html>
