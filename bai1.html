@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        let a, b, i, j;
+
+        a = window.prompt("Từ số: ");
+        
+
+        b = window.prompt("Đến số: ");
+
+        console.log("Số nguyên tố của " + a + " và " + b << " là: ");
+        
+
+        if (a <= 2){
+            a = 2;
+            if (b >= 2)
+            {
+                document.write(a," ");
+                a++;
+            }
+        }
+        
+            if (a % 2 == 0)
+                a++;
+        
+            for (i = a; i <= b; i = i + 2) {
+
+                let flag = 1;
+
+                for (j = 2; j * j <= i; ++j) {
+                    if (i % j == 0) {
+                        flag = 0;
+                        break;
+                    }
+                }
+
+                if (flag == 1){
+                if(i == 1)  continue;
+                else
+                    document.write(i, " ");
+                }
+            }
+    </script>
+    
+</body>
+</html>
